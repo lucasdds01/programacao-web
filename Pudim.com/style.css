@@ -1,0 +1,162 @@
+
+    
+    body {
+    background-color: #FAF3BA;        /* fundo principal (body) */
+    font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #2d2d2d;                   /* tom escuro para bom contraste */
+    }
+    
+    /* CABEÇALHO (HEAD) e RODAPÉ (FOOTER) com a cor determinada #FAC154 */
+    header, footer {
+    background-color: #FAC154;
+    padding: 1.2rem 2rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    }
+    
+    /* TÍTULO principal com a cor especial #FAE300 */
+    .titulo-principal {
+    color: #FAE300;                   /* cor do título */
+    font-size: 3.8rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 0 #00000015, 6px 6px 0 rgba(0,0,0,0.03);
+    margin: 0;
+    line-height: 1.2;
+    word-break: break-word;
+    }
+    
+    /* SUBTÍTULO OU DESCRIÇÃO (opcional para charme) */
+    .sub-titulo {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #3a3a3a;
+    background: rgba(255,255,240,0.4);
+    display: inline-block;
+    padding: 0.3rem 2rem;
+    border-radius: 60px;
+    margin-top: 0.5rem;
+    backdrop-filter: blur(2px);
+    }
+    
+    /* ÁREA PRINCIPAL (CONTEÚDO) */
+    main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1.5rem 3rem;
+    }
+    
+    /* CARD MODERNO QUE SEGURA A IMAGEM E O E-MAIL */
+    .pudim-card {
+    max-width: 700px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(8px);
+    border-radius: 48px 48px 32px 32px;
+    box-shadow: 0 30px 40px -20px rgba(0,0,0,0.25),
+    0 0 0 1px rgba(250, 227, 0, 0.3) inset;
+    padding: 2.2rem 2rem 2rem 2rem;
+    transition: transform 0.2s ease;
+    }
+    
+    .pudim-card:hover {
+    transform: scale(1.01);
+    }
+    
+    /* MOLDURA DA IMAGEM – DESTAQUE */
+    .imagem-container {
+    border-radius: 32px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    border: 6px solid #FAE300;        /* amarelo do título como moldura */
+    box-shadow: 0 18px 25px -10px #7a5f2b;
+    transition: all 0.2s;
+    }
+    
+    .imagem-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    }
+    
+    .imagem-container img:hover {
+    transform: scale(1.03);
+    }
+    
+    /* E-MAIL ESTILIZADO (assim como no site original, mas com toque moderno) */
+    .email-pudim {
+    background-color: #FAC154;          /* mesma cor do header/footer */
+    padding: 1.2rem 1.8rem;
+    border-radius: 120px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #1f2a0e;
+    border: 3px solid #faf3ba;
+    outline: 2px solid #FAE300;
+    margin: 1.5rem auto 0.5rem;
+    transition: 0.2s;
+    word-break: break-word;
+    box-shadow: 0 8px 0 #b2862b;
+    }
+    
+    .email-pudim:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 0 #b2862b;
+    }
+    
+    /* Ícone decorativo (opcional) */
+    .icone-pudim {
+    font-size: 2.2rem;
+    filter: drop-shadow(2px 2px 0 #faf3ba);
+    }
+    
+    /* rodapé com texto e toque de modernidade */
+    footer {
+    font-size: 1.2rem;
+    color: #2c3b1a;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    border-top: 3px dashed #FAF3BA;
+    }
+    
+    footer a {
+    color: #2c3b1a;
+    text-decoration: none;
+    border-bottom: 2px solid #FAE300;
+    }
+    
+    footer a:hover {
+    background-color: #FAE300;
+    }
+    
+ 
+    @media (max-width: 520px) {
+    .titulo-principal {
+    font-size: 2.4rem;
+    }
+    .email-pudim {
+    font-size: 1.2rem;
+    padding: 0.8rem 1rem;
+    }
+    .pudim-card {
+    padding: 1.5rem 1rem;
+    }
+    }
+   
+    .rodape-observacao {
+    margin-top: 0.8rem;
+    opacity: 0.9;
+    }
